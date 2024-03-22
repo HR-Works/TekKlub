@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Startup Name</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, p, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        header p {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .cta button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form input[type="text"], .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        
+        .contact-form textarea {
+            height: 100px;
+        }
+        
+        .contact-form button {
+            width: 100%;
+            padding: 15px 0;
+            font-size: 18px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <h1>TekKlub</h1>
+    <div class="container">
+        <header>
+            <h1>Your Startup Name</h1>
+            <p>Empowering [Target Audience] with [Value Proposition]</p>
+        </header>
+        
+        <div class="content">
+            <p>Welcome to Your Startup Name. We provide [Brief Description of Your Startup].</p>
+            <p>Join our newsletter to stay updated!</p>
+            
+            <div class="cta">
+                <button onclick="location.href='#contact'">Join Newsletter</button>
+            </div>
+        </div>
+        
+        <div id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
